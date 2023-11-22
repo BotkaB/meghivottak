@@ -17,7 +17,11 @@ class EventFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+             
+            'date' => fake()->dateTime(),
+            'location' => fake('hu_HU')->Address(),
+            'org_id' => Organisator::all()->random()->id,
+      
         ];
     }
 }

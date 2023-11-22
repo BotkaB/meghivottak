@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use App\Models\Organisator;
 
 return new class extends Migration
 {
@@ -18,7 +19,31 @@ return new class extends Migration
             $table->string('description');
             $table->timestamps();
         });
+
+        Organisator::create( [
+           
+          
+            'name'=>'kiskozert',
+            'description'=> 'sarki kiskozert',
+           
+        ]);
+        Organisator::create( [
+            
+           
+             'name'=>'kiskozert2',
+             'description'=> 'sarki kiskozert2',
+            
+         ]);
+         Organisator::create( [
+          
+           
+             'name'=>'kiskozert3',
+             'description'=> 'sarki kiskozert3',
+            
+         ]);
     }
+
+   
 
     /**
      * Reverse the migrations.
