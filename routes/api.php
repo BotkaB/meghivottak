@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OrganisatorController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -18,8 +19,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('organisators', [FeladatController::class,'index']);
-Route::get('organisators/{id}', [FeladatController::class,'show']);
-Route::post('organisators', [FeladatController::class,'store']);
-Route::put('organisators/{id}', [FeladatController::class, 'update']);
-Route::delete('organisators/{id}', [FeladatController::class,'destroy']);
+Route::get('organisators', [OrganisatorController::class,'index']);
+Route::get('organisators/{id}', [OrganisatorController::class,'show']);
+Route::post('organisators', [OrganisatorController::class,'store']);
+Route::put('organisators/{id}', [OrganisatorController::class, 'update']);
+Route::delete('organisators/{id}', [OrganisatorController::class,'destroy']);
