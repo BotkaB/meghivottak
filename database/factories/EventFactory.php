@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\Organisator;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Event>
@@ -18,9 +19,9 @@ class EventFactory extends Factory
     {
         return [
              
-            'date' => fake()->dateTime(),
+            'date' => fake()->date(),
             'location' => fake('hu_HU')->Address(),
-            'org_id' => Organisator::all()->random()->id,
+            'org_id' => Organisator::all()->random()->org_id,
       
         ];
     }

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id('event_id');
-            $table->string('name');
+            $table->date('date');
             $table->string('location');
             $table->foreignId('org_id')->references('org_id')->on('organisators');
             $table->timestamps();
