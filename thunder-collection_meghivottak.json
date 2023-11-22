@@ -1,0 +1,101 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "meghivottak",
+    "dateExported": "2023-11-22T18:21:02.985Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "4a8c4f21-94a9-4d02-b151-b43b69e03ec7",
+            "colId": "afd298de-a780-4428-adca-2335887a14d2",
+            "containerId": "",
+            "name": "get meghivottak",
+            "url": "http://127.0.0.1:8000/api/organisators",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-22T17:46:49.457Z",
+            "modified": "2023-11-22T18:10:34.728Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "aa09ce49-c5c0-4baf-889e-4dd8b82da45d",
+            "colId": "afd298de-a780-4428-adca-2335887a14d2",
+            "containerId": "",
+            "name": "get meghivottak adott id",
+            "url": "http://127.0.0.1:8000/api/organisators/2",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-22T18:15:25.678Z",
+            "modified": "2023-11-22T18:15:40.025Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1e38ea38-3f61-4667-861c-5c1b82fd403d",
+            "colId": "afd298de-a780-4428-adca-2335887a14d2",
+            "containerId": "",
+            "name": "post",
+            "url": "http://127.0.0.1:8000/api/organisators?name=kisbolt4&description=sarki kisbolt4",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-11-22T18:15:58.547Z",
+            "modified": "2023-11-22T18:17:19.154Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "kisbolt4",
+                    "isPath": false
+                },
+                {
+                    "name": "description",
+                    "value": "sarki kisbolt4",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "88509841-7b55-4322-8198-b0c332645ebf",
+            "colId": "afd298de-a780-4428-adca-2335887a14d2",
+            "containerId": "",
+            "name": "put meghivottak",
+            "url": "http://127.0.0.1:8000/api/organisators/2?name=kisbolt13&description=sarki kisbolt13",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-11-22T18:17:34.297Z",
+            "modified": "2023-11-22T18:18:32.658Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "kisbolt13",
+                    "isPath": false
+                },
+                {
+                    "name": "description",
+                    "value": "sarki kisbolt13",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "6551d79d-a076-41c2-ae10-9cc85e4328f5",
+            "colId": "afd298de-a780-4428-adca-2335887a14d2",
+            "containerId": "",
+            "name": "delete",
+            "url": "http://127.0.0.1:8000/api/organisators/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-11-22T18:19:08.507Z",
+            "modified": "2023-11-22T18:19:32.927Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
